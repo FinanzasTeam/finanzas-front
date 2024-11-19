@@ -1,0 +1,15 @@
+<mat-card class="portfolio-card" appearance="raised" (click)="navigateToInvoiceList()">
+  <mat-card-header class="card-header">
+    <mat-card-title>{{ portfolio.name }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p class="card-text">Money: {{ portfolio.currency }}</p>
+    <p class="card-text">Number of invoices: {{portfolio.numInvoices}}</p>
+    <p class="card-text">Creation Date: {{ portfolio.createdDate | date: 'dd-MM-yyyy HH:mm' }}</p>
+    <p class="card-text">Discount Date: {{ portfolio.discountDate | date: 'dd-MM-yyyy HH:mm' }}</p>
+  </mat-card-content>
+  <mat-card-actions class="card-actions">
+    <button mat-button color="primary" (click)="openEditDialog($event)">Edit</button>
+    <button mat-button color="warn" (click)="openConfirmDeleteDialog($event)">Delete</button>
+  </mat-card-actions>
+</mat-card>

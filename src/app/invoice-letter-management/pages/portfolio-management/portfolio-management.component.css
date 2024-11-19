@@ -1,0 +1,30 @@
+.portfolio-management {
+  padding: 16px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+
+.portfolio-list {
+  display: grid;
+  min-height: 550px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.add-portfolio-button {
+  display: block;
+  margin: 0 auto;
+  font-size: 18px;
+}

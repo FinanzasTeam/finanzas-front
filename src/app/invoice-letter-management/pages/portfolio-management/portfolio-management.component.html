@@ -1,0 +1,11 @@
+<div class="portfolio-management">
+
+  <button mat-raised-button color="primary" class="add-portfolio-button" (click)="openCreatePortfolioDialog()">Add Portfolio</button>
+
+  <div class="portfolio-list">
+    <app-portfolio-card *ngFor="let portfolio of portfolios" [portfolio]="portfolio"></app-portfolio-card>
+  </div>
+
+  <mat-paginator [length]="totalPortfolios" [pageSize]="9" [pageSizeOptions]="[9]" (page)="onPageChange($event)">
+  </mat-paginator>
+</div>
