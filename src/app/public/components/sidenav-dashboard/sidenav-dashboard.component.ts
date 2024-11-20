@@ -37,6 +37,7 @@ export class SidenavDashboardComponent {
     {label: 'Portfolios', route: '/portfolios', icon: 'folder'},
     {label: 'Invoice Management', route: '/bill', icon: 'receipt'},
     {label: 'Reports', route: '/reports', icon: 'bar_chart'},
-    {label: 'Profile', route: '/profile', icon: 'person'}
+    {label: 'Profile', route: '/profile', icon: 'person'},
+    {label: 'FAQ', route: '/faq', icon: 'help'}
   ]
 }

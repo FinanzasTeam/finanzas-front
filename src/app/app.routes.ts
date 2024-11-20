@@ -6,6 +6,8 @@ import {UserHomePageComponent} from './public/pages/user-home-page/user-home-pag
 import {PageNotFoundComponent} from './public/pages/page-not-found/page-not-found.component';
 import {PortfolioManagementComponent} from './invoice-letter-management/pages/portfolio-management/portfolio-management.component';
 import {InvoiceListComponent} from './invoice-letter-management/pages/invoice-list/invoice-list.component';
+import {HelpPageComponent} from './faq/pages/help-page/help-page.component';
+import {ContactComponent} from './faq/components/contact/contact.component';
 
 export const routes: Routes = [
   {path: 'login', component: LoginComponent},
@@ -16,7 +18,9 @@ export const routes: Routes = [
       {path: '', component: PageNotFoundComponent},
       {path: 'dashboard', component: PageNotFoundComponent },
       {path: 'portfolios', component: PortfolioManagementComponent},
-      {path: 'portfolios/:id', component: InvoiceListComponent}
+      {path: 'portfolios/:id', component: InvoiceListComponent},
+      { path: 'contact', component: ContactComponent},
+      { path: 'faq', component: HelpPageComponent}
     ]
   }
 ];
